@@ -3,6 +3,7 @@
 const cluster = require('cluster');
 const express = require('express');
 const os = require('os');
+const amqp = require('amqplib');
 
 // If in the master process, create a worker for each cpu
 
@@ -21,10 +22,17 @@ if (cluster.isMaster) {
   const app = express();
   app.listen(3000);
 
-  app.get('/clustered', (req, res) => {
+  app.get('/', (req, res) => {
     res.status(200).send(`Running on worker with id #${cluster.worker.id}`);
   });
+
+  app.get('/data', (req, res) => {
+    res.status(200).send('./data.json');
+  });
 }
+
+
+
 
 // const cluster = require('cluster');
 // const http = require('http');
