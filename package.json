@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/mavv/n-rqm#readme",
   "dependencies": {
-    "amqplib": "^0.4.1"
+    "amqplib": "^0.4.1",
+    "express": "^4.13.4",
+    "jackrabbit": "^4.3.0"
   }
 }
