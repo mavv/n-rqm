@@ -1,0 +1,22 @@
+{
+  "name": "n-rqm",
+  "version": "1.0.0",
+  "description": "node rabbitmq @play",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavv/n-rqm.git"
+  },
+  "author": "mavu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mavv/n-rqm/issues"
+  },
+  "homepage": "https://github.com/mavv/n-rqm#readme",
+  "dependencies": {
+    "amqplib": "^0.4.1"
+  }
+}
